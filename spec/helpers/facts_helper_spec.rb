@@ -12,4 +12,5 @@ require 'rails_helper'
 # end
 RSpec.describe FactsHelper, type: :helper do
   
+  
 end
