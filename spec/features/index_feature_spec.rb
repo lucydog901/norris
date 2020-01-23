@@ -9,6 +9,12 @@ RSpec.describe "Search", type: :feature do
     end
   end
 
+describe "facts#index action" do
+    it "should successfully display fact" do
+      visit root_path
+     expect(page).to have_content("keyword")
+    end
+  end
 
 
    

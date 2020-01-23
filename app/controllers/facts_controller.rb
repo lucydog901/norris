@@ -26,8 +26,12 @@ private
     #response.code
     #return nil if response.code != 200
 
-    
+    result = JSON.parse(response.body)["result"]
 
-    return JSON.parse(response.body)["result"][0]["value"]
+    unless result.length == 0
+      return result[0]["value"]
+    else
+      return nil
+    end
 
   end
