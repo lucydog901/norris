@@ -10,6 +10,10 @@ class FactsController < ApplicationController
     return render action: :index
   end
 
+  
+  flash[:alert] = keywords
+  return render action: :index
+
 end
 end
 
@@ -19,9 +23,11 @@ private
   def find_keyword(keyword)
     response = HTTParty.get("https://api.chucknorris.io/jokes/search?query=#{keyword}")
 
-    response.code
-    return nil if response.code != 200
+    #response.code
+    #return nil if response.code != 200
 
-    puts JSON.parse(response.body)["result"][0]["value"]
+    
+
+    return JSON.parse(response.body)["result"][0]["value"]
 
   end
