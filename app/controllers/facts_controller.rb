@@ -3,18 +3,19 @@ class FactsController < ApplicationController
   end
 
   def search
-  keywords = find_keyword(params[:keyword])
+    keywords = find_keyword(params[:keyword])
 
-  unless keywords
-    flash[:alert] = 'Keyword not found'
+    unless keywords
+      flash[:alert] = "Chuck doesn't like that word!"
+      return render action: :index
+    end
+
+    @jokes = keywords
     return render action: :index
+    
+    # flash[:alert] = keywords
+
   end
-
-  
-  flash[:alert] = keywords
-  return render action: :index
-
-end
 end
 
 private
@@ -29,7 +30,7 @@ private
     result = JSON.parse(response.body)["result"]
 
     unless result.length == 0
-      return result[0]["value"]
+      return result
     else
       return nil
     end
