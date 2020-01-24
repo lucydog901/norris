@@ -16,9 +16,22 @@
 
  @import "bootstrap";
 
-body {
-  background-image: image-url('chuck.jpg');
+.hero {
+  background: image_url('chuck3.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat, repeat;
-  background-color: #cccccc;
+  height: 420px;
 }
+
+.frosty {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.row2{
+  margin-top: 0px;
+  margin-bottom: 0px
+}
+
