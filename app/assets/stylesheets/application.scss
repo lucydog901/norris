@@ -22,7 +22,8 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 420px;
+  height: 520px;
+  box-shadow: 0px 3px 8px #2a2a2a;
 }
 
 .frosty {
@@ -30,8 +31,31 @@
   color: white;
 }
 
+.frosty2 {
+  background: (#333300);
+  color: white;
+  box-shadow: 0px 3px 8px #333300;
+}
+
 .row2{
   margin-top: 0px;
   margin-bottom: 0px
 }
 
+.frosty2 h1 {
+  font-family: "Cambria", Cambria;
+  font-weight: 200;
+  font-size: 50px
+}
+
+.frosty2 p {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+  font-size: 18px
+}
+
+.frosty p {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+  font-size: 18px;
+}
