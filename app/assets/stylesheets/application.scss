@@ -29,6 +29,8 @@
 .frosty {
   background: rgba(0, 0, 0, 0.5);
   color: white;
+  margin-top: 10px;
+  margin-bottom: 10px
 }
 
 .frosty2 {
@@ -38,9 +40,11 @@
   padding-left: 10px;
 }
 
-.row2{
+.row2 {
   margin-top: 0px;
-  margin-bottom: 0px
+  margin-bottom: 0px;
+  color: white;
+  background: (#888888)
 }
 
 .frosty2 h1 {
@@ -59,4 +63,8 @@
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 100;
   font-size: 18px;
+}
+
+body {
+  background-color: #888888
 }
