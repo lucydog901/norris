@@ -15,3 +15,10 @@
  */
 
  @import "bootstrap";
+
+body {
+  background-image: image-url('chuck.jpg');
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+  background-color: #cccccc;
+}
