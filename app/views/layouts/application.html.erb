@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Norris</title>
+    <title>Chuck Norris Facts</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,21 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+      </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+
+          <p class="text">Created by Thomasin Durgin using the <a href="https://api.chucknorris.io/" target="_blank">Chuck Norris API</a>.</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
+
+<script>
+    setTimeout("$('.error_msgs').fadeOut('slow')", 5000)
+</script>

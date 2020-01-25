@@ -69,3 +69,26 @@
 body {
   background-color: #888888
 }
+
+.footer p {
+ font-family: "Helvetica Neue", Helvetica;
+ font-weight: 100;
+ font-size: 14px;
+ color: #888888;
+ padding: 10px
+}
+
+a:link {
+  color: #888888;
+  text-decoration: underline
+}
+
+a:visited {
+  color: #888888;
+  text-decoration: none
+}
+
+a:hover {
+  color: red;
+}
+
