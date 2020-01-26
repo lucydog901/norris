@@ -24,8 +24,6 @@ private
   def find_keyword(keyword)
     response = HTTParty.get("https://api.chucknorris.io/jokes/search?query=#{keyword}")
 
-    #response.code
-    #return nil if response.code != 200
 
     result = JSON.parse(response.body)["result"]
 
