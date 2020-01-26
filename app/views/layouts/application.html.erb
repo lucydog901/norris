@@ -13,13 +13,15 @@
     <div class="container">
       <%= yield %>
       </div>
+
+    <script>
+      setTimeout("$('.error_msgs').fadeOut('slow')", 3000)
+
+    </script>
+
   </html>
 
 
 
     
 
-<script>
-    setTimeout("$('.error_msgs').fadeOut('slow')", 3000)
-
-</script>

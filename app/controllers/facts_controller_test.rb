@@ -11,10 +11,20 @@ class FactsController < ApplicationController
     end
 
     @jokes = keywords
-    return render action: :index
+      return render action: :index
+    end
+  end
     
+
+  def random_fact 
+
+    @random = random_fact
+      return render action: :index
     
   end
+
+
+
 end
 
 private
@@ -32,4 +42,14 @@ private
       return nil
     end
 
+    def get_random(random)
+      response = HTTParty.get("https://api.chucknorris.io/jokes/random")
+    end
+
+    result = JSON.parse(response.body)["result"]
+      return result
+   
+    end
   end
+
+

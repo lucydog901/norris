@@ -17,6 +17,7 @@ describe "facts#index action" do
   end
 
 
+
    
 
 

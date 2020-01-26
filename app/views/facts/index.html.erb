@@ -7,7 +7,7 @@
    <div class="row">
     <div class="frosty col-sm-8 offset-2">
       <div class="mx-auto mt-5" style="width: 400px"><br />
-        <p align="center">Search these unproven facts by keyword, or refresh the page to display one random fact.</p><br /><br />
+        <p align="center">Search these unproven facts by keyword, or <a href="https://api.chucknorris.io/jokes/random">click here</a> to display one random fact.</p><br /><br />
         <%= form_with(url: search_path, method: 'get', local: true) do %>
           <div class="form-group">
             <%= label_tag :keyword, 'Search for a keyword'%>
@@ -45,6 +45,7 @@
     </div>
     </div>
     </div>
+
 
     <div class="footer">
       <div class="container">
