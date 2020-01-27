@@ -28,12 +28,13 @@
 
 
       <div class="container">
+
         <div class="row2">
           <div class="col-lg-12 mt-5">
             <div class="mx-auto mt-5" style="width: 600px">  
               <% if @jokes %><h2 align="left">Results:</h1>
                 <% @jokes.each do |joke| %>
-                <p><%= joke["value"] %></p>
+                <p id="joke"><%= joke["value"] %></p>
                 <% end %>
                 <% end %>
                 <br />
