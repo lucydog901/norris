@@ -1,4 +1,4 @@
-<body>
+
   <div class="hero">
     <div class="frosty2">
       <h1 align="left">Chuck Norris Facts</h1>
@@ -21,38 +21,36 @@
                 <%= alert %></p> </span>
                 <% end %> </div>
                 <% end %>
-
-
               </div>
             </div>
           </div>
 
 
 
+      <div class="container">
+        <div class="row2">
+          <div class="col-lg-12 mt-5">
+            <div class="mx-auto mt-5" style="width: 600px">  
+              <% if @jokes %><h2 align="left">Results:</h1>
+                <% @jokes.each do |joke| %>
+                <p><%= joke["value"] %></p>
+                <% end %>
+                <% end %>
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="footer">
           <div class="container">
-            <div class="row2">
-              <div class="col-lg-12 mt-5">
-                <div class="mx-auto mt-5" style="width: 600px">  
-                  <% if @jokes %><h2 align="left">Results:</h1>
-                    <% @jokes.each do |joke| %>
-                    <p><%= joke["value"] %></p>
-                    <% end %>
-                    <% end %>
-                    <br />
-                  </div>
-                </div>
-              </div>
+            <div class="row">
+              <p class="text">Created by Thomasin Durgin using the <a href="https://api.chucknorris.io/" target="_blank">Chuck Norris API</a>.</p>
             </div>
-
-
-            <div class="footer">
-              <div class="container">
-                <div class="row">
-                  <p class="text">Created by Thomasin Durgin using the <a href="https://api.chucknorris.io/" target="_blank">Chuck Norris API</a>.</p>
-                </div>
-              </div>
-            </div>
-          </body>
+          </div>
+        </div>
+      
 
 
 
