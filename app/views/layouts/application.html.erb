@@ -7,6 +7,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
   </head>
 
   <body>
@@ -14,10 +15,7 @@
       <%= yield %>
       </div>
 
-    <script>
-      setTimeout("$('.error_msgs').fadeOut('slow')", 3000)
-
-    </script>
+   
 
   </html>
 

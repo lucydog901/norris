@@ -3,6 +3,7 @@ class FactsController < ApplicationController
   end
 
   def search
+    flash.clear
     keywords = find_keyword(params[:keyword])
 
     unless keywords
@@ -12,12 +13,20 @@ class FactsController < ApplicationController
 
     @jokes = keywords
     return render action: :index
-    
-    
   end
-end
 
-private
+  def random
+    flash.clear
+    joke = find_random
+    @jokes = [joke]
+    return render action: :index
+  end
+
+
+
+
+
+  private
 
 
   def find_keyword(keyword)
@@ -26,10 +35,28 @@ private
 
     result = JSON.parse(response.body)["result"]
 
-    unless result.length == 0
+    unless result.nil? or result.length == 0
+      return result
+    else
+      return nil
+    end
+  end
+
+  def find_random
+    response = HTTParty.get("https://api.chucknorris.io/jokes/random")
+
+
+    result = JSON.parse(response.body)
+
+    return result
+
+    unless result
       return result
     else
       return nil
     end
 
+
   end
+end
+
