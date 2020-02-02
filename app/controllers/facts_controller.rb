@@ -7,7 +7,7 @@ class FactsController < ApplicationController
     keywords = find_keyword(params[:keyword])
 
     unless keywords
-      flash[:alert] = "Chuck hates that word, don't piss Chuck off. Try another one."
+      flash[:alert] = "Word not found, please try another."
       return render action: :index
     end
 
