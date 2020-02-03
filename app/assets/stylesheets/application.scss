@@ -30,7 +30,7 @@
   background: rgba(0, 0, 0, 0.5);
   color: white;
   margin-top: 10px;
-  margin-bottom: 10px
+  margin-bottom: 10px;
 
 }
 
@@ -38,7 +38,7 @@
   background: (#333300);
   color: white;
   box-shadow: 0px 3px 8px #333300;
-  padding-left: 10px
+  padding-left: 10px;
 }
 
 .row2 {
@@ -46,25 +46,25 @@
   margin-bottom: 0px;
   color: white;
   background: (#888888);
-  font-size: 18px
+  font-size: 18px;
 }
 
 .frosty2 h1 {
   font-family: "Cambria", Cambria;
   font-weight: 200;
-  font-size: 50px
+  font-size: 50px;
 }
 
 .frosty2 p {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 100;
-  font-size: 18px
+  font-size: 18px;
 }
 
 .frosty p {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 100;
-  font-size: 18px
+  font-size: 18px;
 }
 
 body {
@@ -75,7 +75,7 @@ body {
  font-family: "Helvetica Neue", Helvetica;
  font-weight: 100;
  font-size: 14px;
- color: #888888
+ color: #888888;
 }
 
 a:link {
@@ -100,5 +100,15 @@ a:hover {
   background-color: #333300;
   padding: 10px;
 
+}
+
+.header:link {
+  color: white;
+  text-decoration: none;
+}
+
+.header:visited {
+  color: white;
+  text-decoration: none;
 }
 

@@ -1,7 +1,7 @@
 
   <div class="hero">
     <div class="frosty2">
-      <h1 align="left">Chuck Norris Facts</h1>
+      <h1 align="left"><a class="header" href=<%= root_path%>>Chuck Norris Facts</a></h1>
       <p align="left">A compendium of Chuck Norris facts of  questionable validity, and unquestionable profanity.</p>
     </div>
     <div class="row">
@@ -14,18 +14,16 @@
             <%= text_field_tag :keyword, nil, placeholder: 'Eg. Fight', class: 'form-control' %>
           </div>
           <%= button_tag 'Search', class: 'btn btn-success btn-block' %><br />
-          <p align="center"><a href=<%= root_path%>>clear results</a> </p>
           <div class="col-lg-12 mt-5">
             <% if flash[:alert] %>
             <span class="error_msgs"> 
               <p class="alert alert-warning">
                 <%= alert %></p> </span>
                 <% end %> </div>
-                <% end %>
+                <% end %><br />
               </div>
             </div>
           </div>
-
 
 
       <div class="container">
@@ -48,7 +46,7 @@
         <div class="footer">
           <div class="container">
             <div class="row">
-              <p class="text">Created by Thomasin Durgin using the <a href="https://api.chucknorris.io/" target="_blank">Chuck Norris API</a>.</p>
+              <p class="text">Created by <a href="http://www.thomasin.com/" target="_blank">Thomasin Durgin</a> using the <a href="https://api.chucknorris.io/" target="_blank">Chuck Norris API</a>.</p>
             </div>
           </div>
         </div>
